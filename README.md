@@ -25,5 +25,8 @@ At the end the user is asked if he wants the program to display the first 5 rows
 * washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Info about getting the month name from the month number: [here](https://pynative.com/python-get-month-name-from-number/#:~:text=Use%20calendar.month_name%20data%20attribute,year%20in%20the%20current%20locale)
+
+Info about converting time from seconds to hours-minutes-seconds: [here](https://www.digitalocean.com/community/tutorials/python-convert-time-hours-minutes-seconds)
+
 
