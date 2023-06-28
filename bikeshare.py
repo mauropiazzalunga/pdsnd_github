@@ -199,6 +199,12 @@ def user_stats(df, city):
 
 
 def display_raw_data(df):
+    """
+    Displays the dataset selected by the user showing 5 rows per time until the user types 'no'
+
+    Args:
+        df - Pandas DataFrame containing city data filtered by month and day
+    """
 
     i = 0
     while True:
