@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 import calendar as cal   # used to get the month name in the 'time_stats' function
 
 CITY_DATA = { 'chicago': 'chicago.csv',
@@ -206,15 +205,15 @@ def display_raw_data(df):
         df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    i = 0
+    counter = 0
     while True:
         view_data = input("\nDo you want to display 5 rows of the selected data? Enter 'yes or 'no': ").lower()
         # used the lower() method so that the variable will be completely lowercase even if the user enter some uppercase letters
         if view_data not in ['yes', 'no']:  # check whether the user entered yes/no or something else
             print("\nEntered value not correct! Please enter 'yes or 'no': ")   # if a wrong value is entered, the user is asked again to enter yes/no
         elif view_data == 'yes':
-            print(df[i:i+5])    # display 5 rows of the selected data in case the user types 'yes'
-            i += 5      # add 5 to variable 'i' so that the next displayed rows will be the next 5 ones
+            print(df[counter:counter+5])    # display 5 rows of the selected data in case the user types 'yes'
+            counter += 5      # add 5 to variable 'i' so that the next displayed rows will be the next 5 ones
         else:
             break   # the while loop breaks only in case the user types 'no'
 
