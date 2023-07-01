@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 import calendar as cal   # used to get the month name in the 'time_stats' function
+import math
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
